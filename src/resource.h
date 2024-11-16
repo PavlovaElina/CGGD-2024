@@ -130,13 +130,13 @@ namespace cg
 		float3 to_float3() const
 		{
 			// TODO Lab: 1.02 Implement `cg::color` and `cg::unsigned_color` structs
-			return float3
-			{
-				static_cast<float>(r),
-				static_cast<float>(g),
-				static_cast<float>(b),
+			return float3{
+						   static_cast<float>(r),
+						   static_cast<float>(g),
+						   static_cast<float>(b),
 
-			} / 255.f;
+				   } /
+				   255.f;
 		};
 		uint8_t r;
 		uint8_t g;
